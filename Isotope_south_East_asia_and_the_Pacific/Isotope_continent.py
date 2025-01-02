@@ -79,4 +79,3 @@ for site in project_sites:
 metadata_library_df=pd.DataFrame(metadata_library)
 metadata_library_df.to_excel(f"Metadata_{metadata_library_df['Countries/territories'].iloc[0]}.xlsx",index=False)
 
-
