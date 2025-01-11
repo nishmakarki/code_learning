@@ -25,7 +25,7 @@ def metadata_filter(filename):          #defining function and using filename as
     filtered_data = data[(data['Years H2'] > 10) & (data['Years O18'] > 10)]        #library that saves the function data
     
     # Drop unnecessary columns
-    filtered_data.drop(columns=['Latitude', 'Longitude', 'Altitude', 'Measurand Symbol'], inplace=True)
+    filtered_data.drop(columns=['Measurand Symbol'], inplace=True)
 
     return filtered_data        #returns values to  the function metadata_filter(filename) as it is called by it and returned to it as well
 
