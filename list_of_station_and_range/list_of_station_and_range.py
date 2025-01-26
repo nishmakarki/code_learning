@@ -38,3 +38,4 @@ for filename in os.listdir():       #os.listdir() to list all files in current d
 
 filtered_metadata_data_df=pd.DataFrame(all_filtered_data)       #convert from dataframe to panda
 filtered_metadata_data_df.to_excel(f"Complete_station_list.xlsx",index=False)
+print('the run is complete')
